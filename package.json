@@ -9,7 +9,7 @@
   },
   "author": "wai2",
   "license": "MIT",
-  "homepage": "https://yunyikang.github.io/webpage",
+  "homepage": "https://yunyikang.github.io/sample-website",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "node-sass": "^4.12.0"
