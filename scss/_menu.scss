@@ -39,6 +39,7 @@
   }
 }
 
+//Menu overlay
 .menu {
   position: fixed;
   top: 0;
@@ -90,7 +91,8 @@
     .portrait {
       width: 250px;
       height: 250px;
-      background: white;
+      background: $profile-pic;
+      background-size: cover;
       border-radius: 50%;
       border: solid 3px $secondary-color;
     }
@@ -127,8 +129,26 @@
   }
 }
 //Delay each nav item slide by 0.1s
-@for $x from 1 through 4 {
+@for $x from 1 through 5 {
   .nav-item:nth-child(#{$x}) {
     transition-delay: $x * 0.1s;
+  }
+}
+
+//Chat
+
+.chat {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: 2px solid $secondary-color;
+  border-radius: 20%;
+  padding: 5px;
+  background: grey;
+  font-size: 1rem;
+  visibility: visible;
+
+  &.close {
+    visibility: hidden;
   }
 }
