@@ -45,6 +45,11 @@
     padding: 0.7rem;
     font-size: 25px;
   }
+  .catalogue {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: auto;
+  }
 }
 //Smartphones
 @include mediaSm {

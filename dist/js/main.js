@@ -14,7 +14,9 @@ menuBtn.addEventListener('click', toggleMenu);
 function toggleMenu() {
   if (!showMenu) {
     menuBtn.classList.add('close');
-    chat.classList.add('close');
+    if (chat) {
+      chat.classList.add('close');
+    }
     menu.classList.add('show');
     menuBranding.classList.add('show');
     menuNav.classList.add('show');
@@ -23,7 +25,9 @@ function toggleMenu() {
     showMenu = true;
   } else {
     menuBtn.classList.remove('close');
-    chat.classList.remove('close');
+    if (chat) {
+      chat.classList.remove('close');
+    }
     menu.classList.remove('show');
     menuBranding.classList.remove('show');
     menuNav.classList.remove('show');
