@@ -80,14 +80,11 @@ main {
       margin-top: 10vh;
       font-size: 3rem;
     }
-
-    .test-container {
-      height: 200px;
-      width: 100%;
-      //background: $primary-color;
-      margin-bottom: 2rem;
-    }
   }
+}
+
+.container {
+  margin: 50px 60px 0 60px;
 }
 
 @import 'mobile';

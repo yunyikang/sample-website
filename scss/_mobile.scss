@@ -50,6 +50,13 @@
     display: grid;
     grid-template-columns: auto;
   }
+  .container {
+    margin: 60px 10px 0 10px;
+
+    .lg-heading {
+      font-size: 3rem;
+    }
+  }
 }
 //Smartphones
 @include mediaSm {

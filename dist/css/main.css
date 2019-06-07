@@ -11,20 +11,17 @@
     margin: 0 0 5px 0;
     background: #fff;
     transition: all 0.5s ease-out; }
-  .menu-btn.close {
-    transform: rotate(180deg) translateY(-5px); }
-    .menu-btn.close .btn-line:nth-child(1) {
-      transform: rotate(-45deg) translate(-11px, 10.5px); }
-    .menu-btn.close .btn-line:nth-child(2) {
-      opacity: 0; }
-    .menu-btn.close .btn-line:nth-child(3) {
-      transform: rotate(45deg); }
+  .menu-btn.close .btn-line:nth-child(1) {
+    transform: translateY(8px) rotate(-225deg); }
+  .menu-btn.close .btn-line:nth-child(2) {
+    opacity: 0; }
+  .menu-btn.close .btn-line:nth-child(3) {
+    transform: translateY(-8px) rotate(225deg); }
 
 .menu {
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -40,14 +37,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #373737;
+    background: rgba(55, 55, 55, 0.9);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #444;
+    background: rgba(68, 68, 68, 0.9);
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -115,8 +112,8 @@
 
 .catalogue {
   margin-top: 60px;
-  display: grid;
-  grid-template-columns: auto auto auto; }
+  display: flex;
+  flex-direction: column; }
   .catalogue-item {
     text-align: center; }
 
@@ -189,10 +186,9 @@ main {
     main#about h1 {
       margin-top: 10vh;
       font-size: 3rem; }
-    main#about .test-container {
-      height: 200px;
-      width: 100%;
-      margin-bottom: 2rem; }
+
+.container {
+  margin: 50px 60px 0 60px; }
 
 @media screen and (max-width: 768px) {
   main {
@@ -225,7 +221,11 @@ main {
   .catalogue {
     margin-top: 60px;
     display: grid;
-    grid-template-columns: auto; } }
+    grid-template-columns: auto; }
+  .container {
+    margin: 60px 10px 0 10px; }
+    .container .lg-heading {
+      font-size: 3rem; } }
 
 @media screen and (max-width: 500px) {
   #home h1.lg-heading {
